@@ -4,12 +4,12 @@ date: "2021-07-12"
 description: Short report about the SkoHub presentation at the 2021 Workshop on Classification and Subject Indexing in Library and Information Science (LIS Workshop) organized by the Working Group within the GfKL – Data Science Society. 
 authors: [{lastname: "Pohl",
            firstname: "Adrian",
-           "id": "http://lobid.org/team/ap#" },
+           id: "http://lobid.org/team/ap#" },
            {lastname: "Rörtgen",
            firstname: "Steffen"}]
 ---
 
-[![First slide of SkoHUb presentation at LIS Workshop 2021](/slides.png)](https://pad.gwdg.de/p/lis-workshop21-skohub)
+[![First slide of SkoHub presentation at LIS Workshop 2021](/slides.png)](https://pad.gwdg.de/p/lis-workshop21-skohub)
 
 Last Friday afternoon, the 2021 Workshop on Classification and Subject Indexing in Library and Information Science (LIS Workshop) took place organized by the Working Group within the GfKL – Data Science Society. Adrian and Steffen had the chance to present SkoHub in the workshop's first presentation. The slides can be viewed at [https://pad.gwdg.de/p/lis-workshop21-skohub](https://pad.gwdg.de/p/lis-workshop21-skohub).
 

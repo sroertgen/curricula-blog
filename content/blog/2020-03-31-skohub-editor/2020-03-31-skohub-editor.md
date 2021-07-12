@@ -142,7 +142,6 @@ Of course you can also poke around the editor while running it locally:
 
 As is the case with SkoHub Vocabs, the editor is implemented in [React](https://reactjs.org/). The form components are located in `src/components/JSONSchemaForm`. In a nutshell, a `Form` provides data to the various input components:
 
-{% raw %}
 ```
 <Form
   data={{title: 'A title'}}
@@ -153,11 +152,9 @@ As is the case with SkoHub Vocabs, the editor is implemented in [React](https://
   <button type="submit">Publish</button>
 </Form>
 ```
-{% endraw %}
 
 Obviously it would be tedious to manually code all the inputs for a given schema. This is where the `Builder` comes into play. It reads a schema and creates all necessary input components:
 
-{% raw %}
 ```
 <Form
   data={{title: ''}}
@@ -182,7 +179,6 @@ Obviously it would be tedious to manually code all the inputs for a given schema
   <button type="submit">Publish</button>
 </Form>
 ```
-{% endraw %}
 
 The browser extension is essentially a simple wrapper for the editor running at [https://skohub.io/editor/](https://skohub.io/editor/), which the extension injects as an `iframe` into the current page. Additionally, before the iframe is injected, some metadata is scraped from that page. This data is used to pre-populate the editor. This process obviously depends both on the data found in the web page and on the schema the editor is configured to use. YouTube for example uses `meta name="description"` for data about YouTube itself rather than the actual video, which is described in `meta property="og:description"`. Even if the correct metadata is extracted, there is no guarantee that the schema used to configure the editor even has a `description` field. In the future, it would be nice to find a possibility to somehow map page metadata to properties in the schema itself.
 

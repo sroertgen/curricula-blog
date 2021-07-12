@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Skohub Blog`,
     author: {
-      name: `Open Infrastructure team of North Rhine-Westphalian Library Service Centre (hbz)`
+      name: `the SkoHub Community`
     },
     description: `A blog for Skohub.`,
     siteUrl: `http://www.skohub.io/blog`,

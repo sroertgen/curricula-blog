@@ -7,6 +7,7 @@ authors: [{lastname: "Pohl",
            id: "http://lobid.org/team/ap#" },
            {lastname: "Rörtgen",
            firstname: "Steffen"}]
+path: lis-workshop-2021
 ---
 
 [![First slide of SkoHub presentation at LIS Workshop 2021](/slides.png)](https://pad.gwdg.de/p/lis-workshop21-skohub)

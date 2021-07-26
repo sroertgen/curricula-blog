@@ -112,7 +112,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `SKohub Blog`,
+        name: `Skohub Blog`,
         short_name: `Skohub Blog`,
         start_url: `/`,
         background_color: `#ffffff`,

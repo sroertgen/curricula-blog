@@ -3,6 +3,11 @@
 This project is the source for the new skohub blog.
 This project was created with the gatsby template [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog).
 
+## Adding a new blog post
+
+We have a few conventions for adding a new blog post:
+Each post has an own folder under `content/blog` starting with the date of the blog post (YYYY-MM-DD). In this folder we add all images used in the blog post. The blog post itself is written as a markdown file named `index.md` so we'll get nice urls.
+
 ## Installation
 
 Gatsby is build with Node.js.

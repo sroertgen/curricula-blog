@@ -22,7 +22,7 @@ So, let's take a look at an example workflow involving SkoHub Editor and the fed
 
 In one of the already mentioned blog posts we exemplarily published the [Educational Subjects Classification](https://w3id.org/class/esc/scheme) with SkoHub Vocabs. Now, let's take a look at a single subject from this classification, e.g. [Library, information and archival studies](https://w3id.org/class/esc/n0322):
 
-<img src="/concept.png" alt="Screenshot of the HTML version of a SKOS concept published with SkoHub.">
+![Screenshot of the HTML version of a SKOS concept published with SkoHub.](./concept.png)
 
 On the left-hand side, you can see the location of the topic in the classification hierarchy. On the right-hand side, there is some basic information on the subject: It has a URI (`https://w3id.org/class/esc/n0322`), a notation (`0322`), a preferred label (`Library, information and archival studies`) and an inbox. This is how the [underlying JSON data](https://w3id.org/class/esc/n0322.json) (e.g. by adding the format suffix `.json` to the URI) looks like:
 
@@ -57,7 +57,7 @@ Besides the usual SKOS properties, the `followers` key gives a hint that I can s
 
 As already noted, what I need is an application that speaks ActivityPub. In this case we will use one of the most popular services in the [Fediverse](https://en.wikipedia.org/wiki/Fediverse): Mastodon. So, I open up my Mastodon client and put the topic URI into the search box:
 
-<img src="/subscribe.png" alt="Screenshot of a Mastodon search result for a topic URL with adjacent subscribe button" style="width:420px">
+![Screenshot of a Mastodon search result for a topic URL with adjacent subscribe button](./subscribe.png)
 
 I click on the follow button and am now following this subject with my Mastodon account and will receive any updates posted by it.
 
@@ -67,15 +67,15 @@ Let's now switch into the role of a scholar, teacher, tutor or general intereste
 
 As the default JSON schema uses another classification, we first have to configure the editor based on a schema that actually makes use of the Educational Subjects Classification. For this, we created a [version of the default schema](https://raw.githubusercontent.com/dini-ag-kim/lrmi-profile/useEsc4Subjects/draft/schemas/schema.json) that does so. Now I put it into the extension's settings:
 
-<img src="/configure-extension.png" alt="Screenshot of how to configure a custom schema in the SkoHub Editor extension for Firefox">
+![Screenshot of how to configure a custom schema in the SkoHub Editor extension for Firefox](./configure-extension.png)
 
 Then, I fire up the extension when visiting the web page I like to share and add data to the input form:
 
-<img src="/describing.png" alt="Describing a resource with the SkoHub Editor browser extension">
+![Describing a resource with the SkoHub Editor browser extension](./describing.png)
 
 I select the topic "Library, information and archival studies" from the suggestions in the "subject" field, add information on licensing etc. and click "Publish". A pop up lets me know that the resource is published to "Library, information and archival studies". In the background, the description of the resource is sent to the respective topic (it could be more than one) which distributes the information to all its subscribers. Thus, in the end I as a subscriber of the topic will receive a notification of the resource in my Mastodon timeline:
 
-<img src="/toot.png" alt="The toot announcing a resource newly published to a SkoHub topic" style="width:500px">
+![The toot announcing a resource newly published to a SkoHub topic](./toot.png)
 
 ## Protocols and implementation
 

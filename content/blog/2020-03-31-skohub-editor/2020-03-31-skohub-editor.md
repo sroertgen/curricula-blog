@@ -17,19 +17,19 @@ In this post, we present *SkoHub Editor* ([demo](https://skohub.io/editor/), [co
 
 Let's start with actually using SkoHub Editor. You will have the most comfortable experience when using the SkoHub browser extension that wraps the SkoHub Editor and pre-populates some field in the web form. The browser extension is available both for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/skohub-extension/) and [Chrome](https://chrome.google.com/webstore/detail/skohub/ghalhmcgaicdcpmdicinaegnoanfmggd). Just add the extension to your browser and a little icon will be shown on the right-hand side of your navigation bar:
 
-<img src="/extension-icon.png" alt="The SkoHub extension icon in between other extensions in the Firefox nav bar" style="width:600px">
+![The SkoHub extension icon in between other extensions in the Firefox nav bar](./extension-icon.png)
 
 While having any web page open, you can now open the SkoHub editor in your browser to describe that web resource. Let's use as an example the YouTube video ["COVID-19 – 6 Dangerous Coronavirus Myths, Busted by World Health Organization"](https://www.youtube.com/watch?v=ZaiDDOZcaqc) published recently by the World Economic Forum under a CC-BY license. Open the video in your browser, click on the extension and you will see that several fields are automatically filled out.
 
-<img src="/prepopulated-webform.png" alt="SkoHub extension in the sidebar of the browser with fields 'URL', 'Title' and 'Description' being pre-populated" style="width:600px">
+![SkoHub extension in the sidebar of the browser with fields 'URL', 'Title' and 'Description' being pre-populated](./prepopulated-webform.png)
 
 We can now add additional metadata by selecting a type (`VideoObject` in this case), add a creator, creation date, language etc. As we mentioned, you can look up a subject from a controlled vocabulary for some fields in the web form. You will experience this when inputting content into the fields "Subject", "License", "Learning Resource Type", and "Intended Audience". For those fields you will get a drop down with suggestions from a controlled vocabulary, e.g. for "Subject" from a German [classification](https://w3id.org/kim/hochschulfaechersystematik/scheme) of subjects in Higher education that is published with SkoHub Vocabs.
 
-<img src="/auto-suggestion-from-skos-vocab.png" alt="The string 'gesundh' is input in the subject field and several entries with this string from a controlled vocabulary are suggested." style="width:420px">
+![The string 'gesund' is input in the subject field and several entries with this string from a controlled vocabulary are suggested.](./auto-suggestion-from-skos-vocab.png)
 
 Currently, only the fields "URL", "Type" and "Title" are obligatory, all other fields are optional. When you think you have described the resource sufficiently, you can click on "Show Preview" in the extension, copy & paste the JSON-LD to the clipboard and include it in the HTML of any web page within a `<script type="application/ld+json">` tag.
 
-<img src="/json-preview.png" alt="Preview of the structured JSON data in the SKoHub extension" style="width:420px">
+![Preview of the structured JSON data in the SKoHub extension](./json-preview.png)
 
 Using the [content subscription & publication features of SkoHub](http://blog.lobid.org/2019/05/17/skohub.html#subject-specific-subscription-to-web-resources), you can furthermore publish the resource via SkoHub PubSub (to be covered in detail in an upcoming post).
 

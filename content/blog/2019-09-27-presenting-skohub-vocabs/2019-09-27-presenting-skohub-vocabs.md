@@ -28,23 +28,23 @@ Currently, a SKOS vocab has to be published in a GitHub repository as one or mor
 In order to publish a vocabulary from GitHub with SkoHub Vocabs, you have to set up a webhook in GitHub. It goes like this:
 
 1.  In the GitHub repo where the vocab resides, go to "Settings" → "Webhooks" and click "Add webhook"
-<img src="/add-webhook.png" alt="Screenshot of the Webhook page in a GitHub repo with highlighted fields for the navigation path." style="width:620px">
+![Screenshot of the Webhook page in a GitHub repo with highlighted fields for the navigation path.](./add-webhook.png)
 2. Enter `https://test.skohub.io/build` as payload URL, choose `application/json` as content type and enter the secret. (Please [contact](http://lobid.org/team/) us for the secret if you want to try it out.)
-<img src="/add-webhook2.png" alt="Screenshot of the Webhook page with input (payload URL and secret)." style="width:620px">
+![Screenshot of the Webhook page with input (payload URL and secret).](./add-webhook2.png)
 
 ### Step 3: Execute build & error handling
 
 For the vocabulary to be built and published on SkoHub, there has to be a new commit in the master branch. So, we have to adjust something in the vocab and push it into the master branch. Looking again at the webhook page in the repo settings, you can see a notice that the build was triggered:
 
-<img src="/check-webhook-response.png" alt="Screenshot from GitHub Webhook page with information that build was triggered with link to build log." style="width:620px">
+![Screenshot from GitHub Webhook page with information that build was triggered with link to build log.](./check-webhook-response.png)
 
 However, looking at the build log, an error is shown and the site did not build:
 
-<img src="/error-in-build-log.png" alt="Screenshot from build log with error message" style="width:620px">
+![Screenshot from build log with error message](./error-in-build-log.png)
 
 Oops, we forgot to check the vocab for syntax errors before triggering the build and there actually *is* a syntax error in the turtle file. Fixing the syntax in a new [commit](https://github.com/hbz/vocabs-edu/commit/6ab97649874607df7784eaa0787adadbcefde166) will automatically trigger a new build:
 
-<img src="/fix-error.png" alt="Screenshot from build log with error message" style="width:620px">
+![Screenshot from build log with error message](./fix-error.png)
 
 This time the build goes through without errors and, voilà, SkoHub has published a human-readable version of the vocabulary at [https://test.skohub.io/hbz/vocabs-edu/heads/master/w3id.org/class/esc/scheme.en.html](https://test.skohub.io/hbz/vocabs-edu/heads/master/w3id.org/class/esc/scheme.en.html). SkoHub Static Site Generator also publishes an [overview](https://test.skohub.io/hbz/vocabs-edu/heads/master/index.en.html) of all the SKOS vocaularies in the GitHub repo.
 
@@ -64,7 +64,7 @@ As a result, we have published a controlled vocabulary in SKOS under a permanent
 
 There also is a search field to easily filter the vocabulary:
 
-<img src="/skohub-ssg-filter.png" alt="Screenshot: Filter the scheme by yping in the search box" style="width:420px">
+![Screenshot: Filter the scheme by yping in the search box](./skohub-ssg-filter.png)
 
 This filter is based on a [FlexSearch](https://github.com/nextapps-de/flexsearch) index that is also built along with the rest of the content. This allows us to implement lookup functionalities without the need for a server-side API. More about this below and in the upcoming post on the SkoHub Editor.
 

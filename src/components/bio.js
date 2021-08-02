@@ -54,7 +54,7 @@ const Bio = () => {
           This blog is maintained by <strong>{author.name}</strong>.
         </p>
         <p>
-          <a href={`https://www.github.com/${social?.github || ``}`}
+          <a href={`https://github.com/${social?.github || ``}`}
              style={{
               fontSize: `1.75em`,
               padding: `0em 0.2em`,

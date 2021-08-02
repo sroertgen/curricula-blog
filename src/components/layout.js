@@ -45,7 +45,7 @@ const Layout = ({ location, title, children  }) => {
       {` | `}
       <a href="http://www.skohub.io">skohub.io</a>
       {` | `}
-      <a href={`https://www.github.com/${social?.github || ``}`}>
+      <a href={`https://github.com/${social?.github || ``}`}>
         GitHub <FontAwesomeIcon icon={faGithub} style={{ color: `#000`}}/>
       </a>
       {` | `}

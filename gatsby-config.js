@@ -4,7 +4,7 @@ module.exports = {
     author: {
       name: `the SkoHub Community`
     },
-    description: `A blog for Skohub.`,
+    description: `A blog for SkoHub.`,
     siteUrl: `http://www.skohub.io/blog`,
     email: `skohub@hbz-nrw.de`,
     social: {

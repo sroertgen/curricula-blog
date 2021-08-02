@@ -1,6 +1,6 @@
 ---
 title: "Presenting the SkoHub Editor"
-date: 2019-09-27
+date: 2020-03-31
 description: "An introducatory post to SkoHub Editor."
 authors: [{lastname: "Pohl",
            firstname: "Adrian",

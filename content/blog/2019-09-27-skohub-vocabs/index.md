@@ -104,7 +104,3 @@ A final word on the FlexSearch index mentioned above. An important use case for 
 ```
 
 Note that currently the index will only return URIs associated with the search term, not the corresponding labels. This will change in a future update.
-
-*Updates:*
-
-* *Edit 2021-02-05: Update some URLs because with [implementing internationalization](https://github.com/skohub-io/skohub-vocabs/issues/79) for the HTML pages, SkoHub Vocabs URLs changed.*

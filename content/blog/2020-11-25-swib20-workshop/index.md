@@ -10,7 +10,7 @@ authors: [{lastname: "Pohl",
 
 From 23-27 November the [12th Semantic Web in Libraries Conference](https://swib.org/swib20/) took place online. The programme with links to recordings and slides forum can be viewed at [https://swib.org/swib20/programme.html](https://swib.org/swib20/programme.html).
 
-Wednesday was workshop day where Adrian and Steffen offered a SkoHub workshop. They tried out a flipped classroom approach and created severel video tutorials and wrote down walkthroughs for the participants to prepare themselves. This did not work out as intended, lesson learned: Always be prepared that a bigger number of participants is not prepared.
+Wednesday was workshop day where Adrian and Steffen offered a SkoHub workshop. They tried out a flipped classroom approach and created several video tutorials and wrote down walkthroughs for the participants to prepare themselves. This did not work out as intended, lesson learned: Always be prepared that a bigger number of participants is not prepared.
 
 Here are some links to the materials:
 

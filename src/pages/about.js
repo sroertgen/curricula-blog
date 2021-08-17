@@ -11,38 +11,48 @@ const About = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="About" />
       <p>
-      SkoHub supports a novel approach for finding content on the web. The general idea is to extend 
-      the scope of Knowledge Organization Systems (KOS) to also act as communication hubs for publishers 
-      and information seekers. In effect, SkoHub allows to follow specific subjects in order to be notified 
-      when new content about that subject is published.
+        Die Curricula-Gruppe der
+        {` `}
+        <a href="https://dini.de/ag/kim/">DINI-AG-KIM</a>
+        {` `}
+        befasst sich mit der Beschreibung von Curricula im Bildungsbereich und
+        entsprechenden Metadatenstandards. Sie bietet eine Austauschplattform
+        für interessierte Personen sowie Fachleute, die gemeinsam Standards und
+        Beispiele sammeln wollen, um Curricula maschinenlesbar darzustellen.
       </p>
       <p>
-      The approach is realized by putting Knowledge Organization Systems online according to the SKOS 
-      standard. Additionally, they are exposed using the (social) networking protocols
-      {` `}
-      <a href="https://activitypub.rocks/">ActivityPub</a>
-      {` `}and{` `}
-      <a href="https://www.w3.org/TR/ldn/">Linked Data Notifications</a>
-      . This effectively turns the published vocabularies into hubs that provide structured metadata 
-      about and links to web content in real time.  
-      </p>
-      
-      <p>
-      The project to create a production-ready version of SkoHub has been carried out by the
-      {` `}
-      <a href="https://www.hbz-nrw.de/">North-Rhine Westphalian Library Service Centre (hbz)</a>
-      {` `}
-      in cooperation with
-      {` `}
-      <a href="http://graphthinking.com/">graphthinking GmbH</a>
-      {` `}
-      with four deliverables. The core is the back end infrastructure for publishing vocabularies 
-      on the web (Skohub Vocabs) and for receiving and pushing notifications (SkoHub PubSub). 
-      Additionally, we provide an editor to describe web resources according to a common metadata 
-      schema and to send notifications (SkoHub Editor). The editor can also be used as a browser 
-      plugin for Firefox and Chrome (SkoHub Extension).
+        Die Curricula-Gruppe hat sich aus der
+        {` `}
+        <a href="https://wiki.dnb.de/display/DINIAGKIM/OER-Metadatengruppe">
+          OER-Metadatenguppe
+        </a>
+        {` `}
+        heraus gegründet. Beide Themen sind eng miteinander verwandt, da sie
+        sich mit Metadaten im Bildungsbereich befassen, haben jedoch
+        unterschiedliche Schwerpunkte. Um ihrer jeweiligen Komplexität dauerhaft
+        gerecht zu werden, wurde sich dafür entschieden unter dem Dach der
+        DINI-AG-KIM eine eigenständige Gruppe zu gründen, die sich hiermit
+        befasst.
       </p>
 
+      <p>
+        Themen der Gruppe sind:
+        <ul>
+          <li>
+            Informationszusammenstellungen zum Thema "Metadatenstandards für
+            Curricula im Bildungsbereich" (national / international)
+          </li>
+          <li>
+            Adaption / Entwicklung von Standards sowie Wertelisten für die
+            deutschsprachige Bildungslandschaft (Schule / Hochschule /
+            Berufliche Bildung / Erwachsenenbildung / ...)
+          </li>
+          <li>
+            Formulierung von Whitepapers, die in Projekt-Anträge übernommen
+            werden können
+          </li>
+        </ul>
+      </p>
     </Layout>
   )
 }

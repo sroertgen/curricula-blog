@@ -1,11 +1,11 @@
 {
-  "name": "skohub-blog",
+  "name": "curricula-blog",
   "private": true,
-  "description": "A blog for Skohub",
+  "description": "Blog der Curricula-Gruppe",
   "version": "0.1.0",
-  "author": "skohub",
+  "author": "curricula-group",
   "bugs": {
-    "url": "https://github.com/skohub-io/skohub-blog/issues"
+    "url": "https://github.com/dini-ag-kim/curricula-blog/issues"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -39,7 +39,7 @@
   "devDependencies": {
     "prettier": "2.2.1"
   },
-  "homepage": "https://github.com/skohub-io/skohub-blog#readme",
+  "homepage": "https://github.com/dini-ag-kim/curricula-blog#readme",
   "keywords": [
     "gatsby",
     "skohub"
@@ -48,7 +48,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skohub-io/skohub-blog.git"
+    "url": "git+https://github.com/dini-ag-kim/curricula-blog.git"
   },
   "scripts": {
     "build": "gatsby build",

@@ -40,18 +40,18 @@ const Bio = () => {
         className="bio-avatar"
         layout="fixed"
         formats={["AUTO", "WEBP", "AVIF"]}
-        src="../images/skohub.png"
+        src="../images/dini-ag-kim.png"
         width={50}
         height={50}
         quality={95}
-        alt="Skohub logo"
+        alt="DINI-AG-KIM logo"
       />
       {author?.name && (
        <div>
         <p>
           {description}
           {` `}
-          This blog is maintained by <strong>{author.name}</strong>.
+          Dieser Blog wird von der <strong>{author.name}</strong> betreut.
         </p>
         <p>
           <a href={`https://github.com/${social?.github || ``}`}

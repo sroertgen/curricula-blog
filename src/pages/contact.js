@@ -13,17 +13,7 @@ const Contact = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Contact" />
       <p>
-        Contact via <a href={`mailto:${email}`}>e-mail</a> and feel free to open issues in the 
-        different repositories of
-        {` `}
-        <a href={`https://github.com/${social?.github}/skohub-editor/issues?q=`}>Skohub Editor</a>
-        ,{` `}
-        <a href={`https://github.com/${social?.github}/skohub-vocabs/issues?q=`}>Skohub Vocabs</a>
-        ,{` `}
-        <a href={`https://github.com/${social?.github}/skohub-pubsub/issues?q=`}>Skohub Pubsub</a>
-        {` `}and{` `} 
-        <a href={`https://github.com/${social?.github}/skohub-extension/issues?q=`}>Skohub Extension</a>, 
-        not only for bugs or enhancements, but also questions about Skohub usage, or to share your experiences.
+        Kontaktiere uns gerne über unsere <a href={`mailto:${email}`}>Mailingliste</a>.
       </p>
     </Layout>
   )

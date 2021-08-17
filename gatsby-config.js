@@ -1,21 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: `Skohub Blog`,
+    title: `Blog der Curricula-Gruppe`,
     author: {
-      name: `the SkoHub Community`
+      name: `Curricula-Gruppe der DINI-AG-KIM`,
     },
-    description: `A blog for SkoHub.`,
-    siteUrl: `http://www.skohub.io/blog`,
-    email: `skohub@hbz-nrw.de`,
+    description: `Der Blog der Curricula-Gruppe.`,
+    siteUrl: `http://www.curricula-gruppe.de/`,
+    email: `dini-ag-kim-curricula@lists.dnb.de`,
     social: {
-      github: `skohub-io`,
+      github: `dini-ag-kim`,
     },
   },
   plugins: [
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `http://www.skohub.io/blog`,
+        siteUrl: `http://www.curricula-gruppe.de/`,
       },
     },
     `gatsby-plugin-image`,
@@ -118,13 +118,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Skohub Blog`,
-        short_name: `Skohub Blog`,
+        name: `Blog der Curricula-Gruppe`,
+        short_name: `Curricula Blog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#26c884`,
         display: `minimal-ui`,
-        icon: `src/images/skohub.png`, // This path is relative to the root of the site.
+        icon: `src/images/dini-ag-kim.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,

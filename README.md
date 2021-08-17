@@ -1,6 +1,6 @@
-# Skohub Blog
+# Curricula Blog
 
-This project is the source for the new skohub blog.
+This project is the source for the new blog of the curricula group in DINI-AG-KIM.
 This project was created with the gatsby template [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog).
 
 ## Adding a new blog post
@@ -43,7 +43,7 @@ npm install -g gatsby-cli
 The site runs with:
 
 ```
-cd skohub-blog
+cd curricula-blog
 npm install
 gatsby develop
 ```
@@ -55,7 +55,7 @@ The site is now running at `http://localhost:8000`!
 To create a production build and output the built static files into the public directory, run:
 
 ```
-cd skohub-blog
+cd curricula-blog
 gatsby build
 ```
 

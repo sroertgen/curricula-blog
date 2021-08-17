@@ -41,9 +41,7 @@ const Layout = ({ location, title, children  }) => {
 
   footer = (
     <div>
-      <Link to="/contact">Contact</Link>
-      {` | `}
-      <a href="http://www.skohub.io">skohub.io</a>
+      <Link to="/contact">Kontakt</Link>
       {` | `}
       <a href={`https://github.com/${social?.github || ``}`}>
         GitHub <FontAwesomeIcon icon={faGithub} style={{ color: `#000`}}/>

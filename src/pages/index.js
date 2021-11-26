@@ -47,22 +47,33 @@ const BlogIndex = ({ data, location }) => {
                   <small>{post.frontmatter.date}</small>
                   {post.frontmatter?.authors && (
                     <small>
-                      {` `}
-                      |
-                      {` `} 
+                      {` `}|{` `}
                       {post.frontmatter.authors.map((author, index) => {
-                        return(
+                        return (
                           <span key={"author" + index}>
                             {author.firstname}
                             {` `}
                             {author.lastname}
-                            {index < post.frontmatter.authors.length - 1 ? ',\u00A0' : ''}
+                            {index < post.frontmatter.authors.length - 1
+                              ? ",\u00A0"
+                              : ""}
                           </span>
                         )
                       })}
                     </small>
-                  )
-                }
+                  )}
+                  {post.frontmatter?.tags && (
+                    <small>
+                      {` | `}
+                      {post.frontmatter.tags.map((tag, index) => {
+                        return (
+                          <small className="chip" key={"tag" + index}>
+                            {tag}
+                          </small>
+                        )
+                      })}
+                    </small>
+                  )}
                 </header>
                 <section>
                   <p
@@ -104,6 +115,7 @@ export const pageQuery = graphql`
             lastname
             firstname
           }
+          tags
         }
       }
     }

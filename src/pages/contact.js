@@ -13,7 +13,8 @@ const Contact = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Contact" />
       <p>
-        Kontaktiere uns gerne über unsere <a href={`mailto:${email}`}>Mailingliste</a>.
+        Kontaktiere uns gerne über unsere{" "}
+        <a href={`mailto:${email}`}>Mailingliste</a>.
       </p>
     </Layout>
   )

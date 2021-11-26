@@ -1,7 +1,7 @@
 {
   "name": "curricula-blog",
   "private": true,
-  "description": "Blog der Curricula-Gruppe",
+  "description": "Blog der OER-Metadaten- und Curricula-Gruppe",
   "version": "0.1.0",
   "author": "curricula-group",
   "bugs": {
@@ -41,7 +41,6 @@
   },
   "homepage": "https://github.com/dini-ag-kim/curricula-blog#readme",
   "keywords": [
-    "gatsby",
     "skohub"
   ],
   "license": "Apache-2.0",

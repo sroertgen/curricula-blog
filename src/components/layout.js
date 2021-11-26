@@ -1,10 +1,10 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
-const Layout = ({ location, title, children  }) => {
+const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
@@ -22,7 +22,6 @@ const Layout = ({ location, title, children  }) => {
   `)
   const social = data.site.siteMetadata?.social
   const email = data.site.siteMetadata.email
-
 
   header = (
     <div>
@@ -44,7 +43,7 @@ const Layout = ({ location, title, children  }) => {
       <Link to="/contact">Kontakt</Link>
       {` | `}
       <a href={`https://github.com/${social?.github || ``}`}>
-        GitHub <FontAwesomeIcon icon={faGithub} style={{ color: `#000`}}/>
+        GitHub <FontAwesomeIcon icon={faGithub} style={{ color: `#000` }} />
       </a>
       {` | `}
       <a href="/rss.xml">Feed</a>

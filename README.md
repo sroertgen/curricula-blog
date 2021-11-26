@@ -16,11 +16,12 @@ Gatsby is build with Node.js.
 
 #### Windows
 
-Download and install the latest Node.js version from [the official Node.js website]( https://nodejs.org/en/).
+Download and install the latest Node.js version from [the official Node.js website](https://nodejs.org/en/).
 
 #### Unix
 
 Download the lastest nvm version.
+
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 ```

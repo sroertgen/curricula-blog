@@ -26,18 +26,34 @@ const BlogPostTemplate = ({ data, location }) => {
           <p>
             {post.frontmatter.date}
             {post.frontmatter?.authors && (
-                    <span>
-                      {` | `}
-                      {post.frontmatter.authors.map((author, index) => {
-                        return(
-                          <span key={"author" + index}>
-                            {author.firstname}
-                            {` `}
-                            {author.lastname}
-                            {index < post.frontmatter.authors.length - 1 ? ',\u00A0' : ''}
-                          </span>
-                        )})}
-                    </span>)}
+              <span>
+                {` | `}
+                {post.frontmatter.authors.map((author, index) => {
+                  return (
+                    <span key={"author" + index}>
+                      {author.firstname}
+                      {` `}
+                      {author.lastname}
+                      {index < post.frontmatter.authors.length - 1
+                        ? ",\u00A0"
+                        : ""}
+                    </span>
+                  )
+                })}
+              </span>
+            )}
+            {post.frontmatter?.tags && (
+              <span>
+                {` | `}
+                {post.frontmatter.tags.map((tag, index) => {
+                  return (
+                    <span className="chip" key={"tag" + index}>
+                      {tag}
+                    </span>
+                  )
+                })}
+              </span>
+            )}
           </p>
         </header>
         <section
@@ -99,11 +115,12 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        authors { 
+        authors {
           lastname
           firstname
-         }
+        }
         description
+        tags
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

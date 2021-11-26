@@ -8,8 +8,8 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -35,7 +35,7 @@ const Bio = () => {
   const social = data.site.siteMetadata?.social
 
   return (
-    <div  className="bio">
+    <div className="bio">
       <StaticImage
         className="bio-avatar"
         layout="fixed"
@@ -47,24 +47,26 @@ const Bio = () => {
         alt="DINI-AG-KIM logo"
       />
       {author?.name && (
-       <div>
-        <p>
-          {description}
-          {` `}
-          Dieser Blog wird von der <strong>{author.name}</strong> betreut.
-        </p>
-        <p>
-          <a href={`https://github.com/${social?.github || ``}`}
-             style={{
-              fontSize: `1.75em`,
-              padding: `0em 0.2em`,
-              color: `#000`,
-              boxShadow: `none`,
-            }}>
-          <FontAwesomeIcon icon={faGithub}/>
-          </a>
-        </p>
-       </div>
+        <div>
+          <p>
+            {description}
+            {` `}
+            Dieser Blog wird von der <strong>{author.name}</strong> betreut.
+          </p>
+          <p>
+            <a
+              href={`https://github.com/${social?.github || ``}`}
+              style={{
+                fontSize: `1.75em`,
+                padding: `0em 0.2em`,
+                color: `#000`,
+                boxShadow: `none`,
+              }}
+            >
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+          </p>
+        </div>
       )}
     </div>
   )

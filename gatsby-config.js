@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Blog der Curricula-Gruppe`,
+    title: `Blog der OER-Metadaten- und Curricula-Gruppe`,
     author: {
-      name: `Curricula-Gruppe der DINI-AG-KIM`,
+      name: `OER-Metadaten- und Curricula-Gruppe der DINI-AG-KIM`,
     },
     description: `Der Blog der Curricula-Gruppe.`,
     siteUrl: `http://www.curricula-gruppe.de/`,

@@ -4,11 +4,15 @@ module.exports = {
     author: {
       name: `OER-Metadaten- und Curricula-Gruppe der DINI-AG-KIM`,
     },
-    description: `Der Blog der Curricula-Gruppe.`,
+    description: `Ein Blog rund um das Thema Metadaten zu Bildungsressourcen, Kompetenz- und Lehrplänen`,
     siteUrl: `http://www.curricula-gruppe.de/`,
     email: `dini-ag-kim-curricula@lists.dnb.de`,
     social: {
       github: `dini-ag-kim`,
+    },
+    wikis: {
+      oer: `https://wiki.dnb.de/display/DINIAGKIM/OER-Metadatengruppe`,
+      curricula: `https://wiki.dnb.de/display/DINIAGKIM/Curricula-Gruppe`,
     },
   },
   plugins: [

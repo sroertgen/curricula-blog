@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/curricula-blog",
   siteMetadata: {
     title: `Blog der OER-Metadaten- und Curricula-Gruppe`,
     author: {
